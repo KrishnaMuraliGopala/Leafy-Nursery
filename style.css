@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7f4;
+    color: #222;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #1f2933;
+    color: white;
+    padding: 15px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #a5d6a7;
+}
+
+/* Home Hero Section */
+#home {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #e8f5e9;
+}
+
+#home h1 {
+    font-size: 36px;
+    color: #1f2933;
+    margin-bottom: 12px;
+}
+
+#home p {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 22px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2e4c30;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Plants Gallery Section */
+#plants {
+    padding: 60px 6%;
+    text-align: center;
+}
+
+#plants h2 {
+    font-size: 28px;
+    color: #2e4c30;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #2e7d32;
+}
+
+/* Plant Store Section */
+#stores {
+    padding: 60px 6%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#stores h2 {
+    font-size: 28px;
+    color: #2e4c30;
+    margin-bottom: 25px;
+}
+
+.store-box {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #f1f8e9;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #2e7d32;
+}
+
+.store-box img {
+    width: 30%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.store-box h3 {
+    margin-top: 15px;
+    color: #2e4c30;
+}
+
+.store-box p {
+    margin-top: 8px;
+    color: #555;
+}
+
+/* About Us Section */
+#about-us {
+    padding: 60px 6%;
+    text-align: center;
+}
+
+#about-us h2 {
+    font-size: 28px;
+    color: #2e4c30;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border-bottom: 4px solid #2e7d32;
+}
+
+.about-container h3 {
+    color: #2e4c30;
+    margin-bottom: 12px;
+}
+
+.about-container p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e8f5e9;
+    padding: 50px 6%;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #2e4c30;
+    margin-bottom: 12px;
+}
+
+#contact p {
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 4%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    #home h1 {
+        font-size: 26px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gallery-grid img {
+        height: 140px;
+    }
+
+    .store-box img {
+        width: 100%;
+        height: 160px;
+        margin: 5px 0;
+    }
+}
+  
